@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+  background-image: url("pngtree-romantic-heart-shaped-hd-background-image_162702.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* optional, can be removed on mobile */
+  font-family: "Roboto", sans-serif;
+}
+
+    .container{
+        /* width: 600px; */
+        /* background-color: black;
+        color: white; */
+        margin: 200px ;
+        text-align: left;
+        /* margin-left: ; */
+        display: inline-block;
+
+
+        
+        
+    }
+    h1{
+        font-size: 65px;
+        text-transform: capitalize;
+        color: rgb(182, 38, 122);
+        font-family: "Dancing Script", cursive;
+        opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    .line{
+        padding: 40px;
+        font-size: 25px;
+        margin-left: 45px;
+        color: rgb(175, 24, 75);
+        display: inline-block;
+        opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .button{    
+        display: inline-block;
+    margin-left: 620px;
+    margin-top: 23px;
+    }
+    button{
+text-transform: capitalize;
+padding: 15px;
+border-radius: 30px;
+font-size: 14px;
+/* font-weight: bold; */
+font-family: "Roboto", sans-serif;
+background-color:palevioletred ;
+color:whitesmoke;
+border: none;
+box-shadow: 2px 5px 8px 1px rgb(119 67 105 / 60%);
+opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .container {
+    margin: 50px 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .line {
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .button {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  button {
+    display: inline-block;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .button {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  button {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>To my first favorite woman - maa💖</h1>
+
+            <div class="line">
+    
+                <h3 id="text"></h3>
+                <div class="button">
+               <a href="next.html"> <button>Scroll into My heart</button></a>
+            </div>
+            </div>
+        </div>
+ 
+ </div>
+    </header>
+
+    <script>
+      const text = "Every heartbeat of mine is stitched by your love.";
+      const speed = 100; // milliseconds
+    
+      let index = 0;
+    
+      function typeWriter() {
+        if (index < text.length) {
+          document.getElementById("text").textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    
+      typeWriter();
+    </script>
+</body>
+</html>

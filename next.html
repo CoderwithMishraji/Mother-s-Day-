@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Maa</title><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+    body {
+  background-image: url("pngtree-romantic-heart-shaped-hd-background-image_162702.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* optional, can be removed on mobile */
+  
+}
+
+.box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .box{
+        background-color: whitesmoke;
+        border: none;
+        margin: 25px;
+        padding: 10px;
+        width: 660px;
+        border-radius: 20px;
+        min-height: 200px;
+        box-sizing: border-box;
+    }
+    .box1{
+        
+        margin: 25px;
+        padding: 10px;
+        border-radius: 20px;
+        min-height: 200px;
+        box-sizing: border-box;
+    }
+    .box2{
+          margin: 25px;
+        padding: 10px;
+        /* width: 660px; */
+        border-radius: 20px;
+        min-height: 200px;
+        box-sizing: border-box;
+
+        
+    }
+    h1{
+        font-family: "Dancing Script", cursive;
+        margin: 50px auto;
+        color:  rgb(182, 38, 122);
+        font-weight: bold;
+        font-size:48px;
+        text-transform: capitalize;
+        opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    h3  {
+        text-align: left;
+        padding: 10px;
+        color:  rgb(117, 50, 106);
+        /* font-family: "Dancing Script", cursive; */
+        font-weight: bolder;
+        font-size: 20px;
+        
+    }
+     p{
+        text-align: left;
+        padding: 5px;
+        color: rgb(175, 24, 75);
+        
+        
+     }
+     button{
+       
+        font-size: 12px;
+        
+        padding: 5px;
+        margin-top: 15px; 
+        background-color: #fc35a2;
+    color: rgb(241, 181, 231);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* font-size: 16px; */
+     }
+     @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+     @media screen and (max-width: 768px) {
+        .box {
+            width: 90%;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 30px auto 20px;
+    }
+
+    .box, .box2 {
+        width: 90%;
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .box1 {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin-top: 10px;
+    }
+
+    h3, p {
+        font-size: 16px;
+    }
+}
+
+</style>
+<body>
+    <h1 id="text"></h1>
+<div class="box-container">
+    <div class="box box1">
+        <h3>Dear Maa (Mom, Mata-ji),</h3>
+        <p>Your love has been my guiding light through every step of my journey. Your strength, your wisdom, and your endless patience have shaped me into who I am today.
+            </p>
+
+            <p>You are my first love, my forever strength.
+                Your smile gives me peace, your words give me courage.
+                You’ve done so much without ever asking for anything</p>
+    </div>
+    <div class="box box2">
+       <P> I remember all the meals you prepared with love, all the times you put my needs before your own.
+                Your selfless love has been the foundation upon which I've built my life, and for that, I am eternally grateful.
+                No words can fully express the depth of my love and appreciation for you, but I hope this small gesture brings a smile to your face.Thank you for everything, Maaa. <br> <br>I love you 💖❤😍</p>
+          <a href="final.html"> <button>See what next ✨</button></a>      
+    </div>
+
+ 
+</div>
+<script>
+    const text = "From my heart to yours";
+    const speed = 100; // milliseconds
+  
+    let index = 0;
+  
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById("text").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  
+    typeWriter();
+  </script>
+</body>
+</html>
+
